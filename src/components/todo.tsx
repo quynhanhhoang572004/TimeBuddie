@@ -20,13 +20,14 @@ export const TodoItem =({ todo, onToggle, onStart, onRemove }: TodoItemProps) =>
           checked={todo.done}
           onChange={() => onToggle(todo.id)}
           className="form-check-input"
-          style={{ width: 24, height: 24, borderRadius: 4 }}
+          style={{ width: 24, height: 24, borderRadius: 4, border:"4px solid #A6AF40"  }}
         />
         <span
           style={{
             fontFamily: "'Press Start 2P'",
             fontSize: "24px",
-            color: "#7A8B2E",
+            color: "#A6AF40",
+            textShadow: "4px 1px 0px #777C2E",
             letterSpacing: "2px",
             textDecoration: todo.done ? "line-through" : "none",
             opacity: todo.done ? 0.6 : 1,
@@ -42,8 +43,8 @@ export const TodoItem =({ todo, onToggle, onStart, onRemove }: TodoItemProps) =>
           className="border-0"
           style={{
             fontFamily: "'Press Start 2P'",
-            backgroundColor: "#F6E8A7",
-            color: "#7A8B2E",
+            backgroundColor: "#FFE898",
+            color: "#FFFFF",
             borderRadius: 12,
             padding: "8px 16px",
           }}
@@ -56,7 +57,7 @@ export const TodoItem =({ todo, onToggle, onStart, onRemove }: TodoItemProps) =>
           className="border-0"
           style={{
             fontFamily: "'Press Start 2P'",
-            backgroundColor: "#EAA59C",
+            backgroundColor: "#FFA798",
             color: "white",
             borderRadius: 12,
             padding: "8px 16px",

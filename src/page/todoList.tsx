@@ -52,10 +52,10 @@ export const TodoList: React.FC = () => {
         style={{
           width: "min(900px, 92vw)",
           background: "white",
-          border: "4px solid #5B84EA",
+        
           borderRadius: "28px",
           padding: "48px 56px 96px",
-          boxShadow: "0 2px 0 #5B84EA inset",
+          
         }}
       >
         
@@ -96,12 +96,12 @@ export const TodoList: React.FC = () => {
             style={{
               padding: "12px",
               borderRadius: 12,
-              border: "2px solid #5B84EA",
+              
               fontFamily: "'Press Start 2P'",
               fontSize: "12px",
               width: "200px",
             }}
-            onKeyDown={e => e.key === "Enter" && add()} // add on Enter
+            onKeyDown={e => e.key === "Enter" && add()} 
           />
           <button
             onClick={add}
@@ -110,8 +110,8 @@ export const TodoList: React.FC = () => {
               padding: "12px 28px",
               borderRadius: 12,
               fontFamily: "'Press Start 2P'",
-              backgroundColor: "#F6E8A7",
-              color: "#7A8B2E",
+              backgroundColor: "#FFE898",
+              color: "#FFFF",
             }}
           >
             Add
