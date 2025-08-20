@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
-import { LinkContainer } from "react-router-bootstrap";
 
 export const Homepage = () => {
   return (
